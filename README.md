@@ -2,6 +2,8 @@
 
 The idea here is to gain some understanding of how blockchain technology works by building relevant nodes in Godot Engine and coding functionality in GDScript. Then simulate transactions.
 
+The first Godot coin to be minted:
+
 ![Godot Coin](/assets/godot-coin.png)
 
 ## What is a blockchain?
