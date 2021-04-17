@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Control",
+"class": "Block",
+"language": "GDScript",
+"path": "res://Block.gd"
+}, {
+"base": "Control",
+"class": "Blockchain",
+"language": "GDScript",
+"path": "res://Blockchain.gd"
+}, {
+"base": "Control",
+"class": "Network",
+"language": "GDScript",
+"path": "res://Network.gd"
+}, {
+"base": "Control",
+"class": "Validator",
+"language": "GDScript",
+"path": "res://Validator.gd"
+} ]
+_global_script_class_icons={
+"Block": "",
+"Blockchain": "",
+"Network": "",
+"Validator": ""
+}
+
+[application]
+
+config/name="Blockchain"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
