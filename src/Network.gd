@@ -5,7 +5,7 @@ class_name Network
 var blockchain: Blockchain
 var validators: Array
 
-func pick_validator():
+func pick_validator() -> Validator:
 	var total_stakes = 0
 	var stakes = []
 	for v in validators:

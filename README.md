@@ -16,19 +16,27 @@ A blockchain is a growing list of records, called blocks, that are linked using 
 
 We will use a Proof of Stake (PoS) protocol so as not to waste lots of energy as in a PoW (Proof of Work) system.
 
-* Previous hash
-* Timestamp
-* Transaction root
-* Validator address
+* Previous block's hash
+* Timestamp - when the block was created
+* Transaction data (Merkle tree)
+* Validator address - the validator that was responsible f
+or creating the block
 
 ## The network
 
 * Blockchain
 * Validators - these are servers around the Internet
 
-## Validator
+## Validators
 
 These are servers like Miner rigs.
 
 * Stake - number of tokens (coins) held
 * Address - such as the IP address of the server
+
+## ToDos
+
+* Add tests
+* Figure out how to implement transactions
+* Create a UI and graphical representation of nodes
+* Be able to run scenarios to simulate activities
