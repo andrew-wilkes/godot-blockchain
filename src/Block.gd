@@ -1,6 +1,6 @@
 extends Control
 
-class_name Block
+class_name Block, "res://icon.png"
 
 var previous_hash: String
 var timestamp: int

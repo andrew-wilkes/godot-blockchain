@@ -30,7 +30,7 @@ _global_script_classes=[ {
 "path": "res://Validator.gd"
 } ]
 _global_script_class_icons={
-"Block": "",
+"Block": "res://icon.png",
 "Blockchain": "",
 "Network": "",
 "Validator": ""
