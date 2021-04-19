@@ -18,7 +18,7 @@ We will use a Proof of Stake (PoS) protocol so as not to waste lots of energy as
 
 * Previous block's hash
 * Timestamp - when the block was created
-* Transaction data (Merkle tree)
+* Transaction data (Merkle tree) - Area of confusion for me!
 * Validator address - the validator that was responsible for creating the block
 
 ## The network
@@ -28,14 +28,15 @@ We will use a Proof of Stake (PoS) protocol so as not to waste lots of energy as
 
 ## Validators
 
-These are servers like Miner rigs.
-
 * Stake - number of tokens (coins) held
 * Address - such as the IP address of the server
+
+Maybe these will somehow handle transactions and when there are enough records, want to create a new block containing the tokens/coins. This is the area that I don't understand yet.
 
 ## ToDos
 
 * Add test suite
-* Figure out how to implement transactions
+* Figure out how to implement transactions - I don't understand this topic yet
+* Understand the role of a Wallet in this system
 * Create a UI and graphical representation of nodes
 * Be able to run scenarios to simulate activities
