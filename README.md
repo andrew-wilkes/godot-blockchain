@@ -19,8 +19,7 @@ We will use a Proof of Stake (PoS) protocol so as not to waste lots of energy as
 * Previous block's hash
 * Timestamp - when the block was created
 * Transaction data (Merkle tree)
-* Validator address - the validator that was responsible f
-or creating the block
+* Validator address - the validator that was responsible for creating the block
 
 ## The network
 
@@ -36,7 +35,7 @@ These are servers like Miner rigs.
 
 ## ToDos
 
-* Add tests
+* Add test suite
 * Figure out how to implement transactions
 * Create a UI and graphical representation of nodes
 * Be able to run scenarios to simulate activities
