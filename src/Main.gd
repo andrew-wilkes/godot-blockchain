@@ -5,7 +5,10 @@ var network: Network
 func _ready():
 	network = Network.new()
 	network.blockchain = Blockchain.new()
-	network.add_block(Block.new())
+	network.blockchain.name = "Blockchain"
+	network.add_child(network.blockchain)
+	network.name = "Network"
+	add_child(network)
 	
 	# Create validator nodes
 	var v1 = Validator.new()
@@ -22,3 +25,9 @@ func _ready():
 	v3.address = "v3"
 	v3.stake = 5
 	network.validators.append(v3)
+	
+	# Add Genesis block 
+	network.blockchain.add_block()
+	
+	# Mint new block based on choosing a lucky validator
+	network.blockchain.add_block(network.pick_validator())

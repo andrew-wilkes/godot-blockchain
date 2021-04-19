@@ -3,10 +3,17 @@ extends Control
 class_name Network
 
 var blockchain: Blockchain
-var head_block: Block
 var validators: Array
 
-func add_block(block: Block):
-	block.timestamp = OS.get_unix_time()
-	blockchain.add_child(block)
-	head_block = block
+func pick_validator():
+	var total_stakes = 0
+	var stakes = []
+	for v in validators:
+		var validator: Validator = v
+		total_stakes += validator.stake
+		stakes.append(validator.stake)
+	var pick = randi() % total_stakes
+	for i in stakes.size():
+		pick -= stakes[i]
+		if pick < 0:
+			return validators[i]
