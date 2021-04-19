@@ -2,7 +2,9 @@
 
 The idea here is to gain some understanding of how blockchain technology works by building relevant nodes in Godot Engine and coding functionality in GDScript. Then simulate transactions.
 
-The first Godot coin to be minted:
+## Godot coin
+
+This will represent the tokens that get accumulated into stakes that are held.
 
 ![Godot Coin](/assets/godot-coin.png)
 
@@ -22,12 +24,11 @@ We will use a Proof of Stake (PoS) protocol so as not to waste lots of energy as
 ## The network
 
 * Blockchain
-* Headblock
-* Validators
+* Validators - these are servers around the Internet
 
-## Node
+## Validator
 
-May act as a Validator.
+These are servers like Miner rigs.
 
-* Stake - number of tokens held.
-* Address
+* Stake - number of tokens (coins) held
+* Address - such as the IP address of the server
