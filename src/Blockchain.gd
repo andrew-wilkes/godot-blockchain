@@ -26,8 +26,20 @@ func add_block(validator: Validator = null):
 	var block = Block.new()
 	block.timestamp = OS.get_unix_time()
 	if validator == null:
-		validator = Validator.new()
+		# We are creating the first (Genesis) block
+		block.validator = Validator.new()
+		add_child(block)
 	else:
 		block.previous_hash = get_hash(get_children().pop_back())
-	block.validator = validator
-	add_child(block)
+		block.validator = validator
+		# Check for tampering with the network
+		if validate(): # TODO: and validate_block()
+			add_child(block)
+		else:
+			penalize_validator(validator)
+
+
+func penalize_validator(validator: Validator):
+	validator.stake -= 10
+	if validator.stake < 0:
+		validator.stake = 0
