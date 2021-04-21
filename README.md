@@ -8,6 +8,8 @@ This will represent the tokens that get accumulated into stakes that are held.
 
 ![Godot Coin](/assets/godot-coin.png)
 
+The [Godotcoin](https://godotcoin.com) website is now live.
+
 ## What is a blockchain?
 
 A blockchain is a growing list of records, called blocks, that are linked using cryptographic hashes. Each block contains a hash of the previous block, a timestamp, and transaction data (generally represented as a Merkle tree). By design, a blockchain is resistant to modification of its data. This is because once recorded, the data in any given block cannot be altered retroactively without alteration of all subsequent blocks.
