@@ -44,4 +44,5 @@ config/icon="res://icon.png"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.384314, 0.686275, 0.309804, 0.470588 )
 environment/default_environment="res://default_env.tres"

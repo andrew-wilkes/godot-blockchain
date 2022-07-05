@@ -8,10 +8,12 @@ func validate() -> bool:
 	var valid = true
 	var index = get_child_count() - 1
 	var block: Block = get_child(index)
+	var crypto = Crypto.new()
 	while index > 0:
 		index -= 1
 		var next_block: Block = get_child(index)
-		valid = block.timestamp > next_block.timestamp and block.previous_hash == get_hash(next_block)
+		valid = block.timestamp > next_block.timestamp and \
+		 crypto.constant_time_compare(block.previous_hash.to_ascii() == get_hash(next_block).to_ascii())
 		if not valid:
 			index = 0
 		block = next_block
