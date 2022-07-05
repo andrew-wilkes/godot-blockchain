@@ -8,7 +8,6 @@ This will represent the tokens that get accumulated into stakes that are held.
 
 ![Godot Coin](/assets/godot-coin.png)
 
-The [Godotcoin](https://godotcoin.com) website is now live.
 
 ## What is a blockchain?
 
